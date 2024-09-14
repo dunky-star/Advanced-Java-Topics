@@ -1,4 +1,5 @@
-import java.util.Iterator;
+import collections.CollectionDemo;
+import generics.GenericList;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,5 +13,7 @@ public class Main {
         for (String item : list){
             System.out.println(item);
         }
+
+        CollectionDemo.show();
     }
 }

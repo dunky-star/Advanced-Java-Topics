@@ -1,20 +1,22 @@
+package generics;
+
 import java.util.Iterator;
 
 public class GenericList<T> implements Iterable<T> {
 
-    protected T[] items = (T[]) new Object[10];
+    public T[] items = (T[]) new Object[10];
 
     private int count;
 
-    protected void add(T item){
+    public void add(T item){
         items[count++] = item;
     }
 
-    protected T get(int index){
+    public T get(int index){
         return items[index];
     }
 
-    @Override 
+    @Override
     public Iterator<T> iterator() {
         return new ListIterator(this);
     }
