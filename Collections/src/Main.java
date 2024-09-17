@@ -1,4 +1,5 @@
 import collections.CollectionDemo;
+import collections.ListDemo;
 import generics.GenericList;
 
 public class Main {
@@ -15,5 +16,6 @@ public class Main {
         }
 
         CollectionDemo.show();
+        ListDemo.show();
     }
 }
