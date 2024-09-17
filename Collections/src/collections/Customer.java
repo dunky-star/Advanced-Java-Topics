@@ -4,11 +4,21 @@ package collections;
 
 public class Customer implements Comparable<Customer>{
     private String firstName;
+    private String email;
     private int age;
 
-    public Customer(String firstName, int age) {
+    public Customer(String firstName, String email, int age) {
         this.firstName = firstName;
+        this.email = email;
         this.age = age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
