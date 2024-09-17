@@ -3,7 +3,7 @@ package collections;
 /*
 * It is a good idea to always program to interface.
 * This makes our codes become loosely coupled.
-* NB: Collections don't support indexing
+* NB: Collections don't support indexing.
 * */
 
 import java.util.ArrayList;
