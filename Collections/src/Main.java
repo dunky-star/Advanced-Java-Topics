@@ -29,5 +29,6 @@ public class Main {
         CollectionDemo.show();
         ListDemo.show();
         QueueDemo.show();
+        SetDemo.show();
     }
 }
