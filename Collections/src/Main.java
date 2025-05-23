@@ -30,5 +30,6 @@ public class Main {
         ListDemo.show();
         QueueDemo.show();
         SetDemo.show();
+        MapDemo.show();
     }
 }
