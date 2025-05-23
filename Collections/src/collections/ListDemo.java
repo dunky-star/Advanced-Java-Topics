@@ -11,8 +11,11 @@ public class ListDemo {
         list.add("Lilly");
         list.add(0, "!");
         list.set(1, "a+");
+        list.set(2, "b+");
+        list.remove(0);
         Collections.addAll(list, "aa", "bb", "cc");
         System.out.println("\nList:" +list);
+        System.out.println("\nIndex of b+:" +list.indexOf("b+"));
         System.out.println("Item at index 0: " +list.get(0));
         System.out.println("Sublist: " +list.subList(0, 3)); // From index 0 to index 2 (exclude index 3)
     }

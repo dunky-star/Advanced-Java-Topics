@@ -14,19 +14,23 @@ import java.util.Collections;
 public class CollectionDemo {
     public static void show(){
         Collection<String> collection = new ArrayList<>();
-
+        collection.add("G");
+        collection.add("K");
         Collections.addAll(collection, "T", "R", "U", "E", "-", "T", "H", "A", "T");
         boolean containsA = collection.contains("a");
         collection.remove("E");
 
-
         //collection.clear();
         System.out.println("Collection contains A? " +containsA);
         // To convert collection to an Array of String
-        String[] toArrString = collection.toArray(new String[0]);
+        Object[] objectArray = collection.toArray(); // Object Array
+        String[] toArrString = collection.toArray(new String[0]); // String Array
         System.out.println(Arrays.toString(toArrString));
         Collection<String> other = new ArrayList<>();
+        other.add("Kitty");
+        other.add("Cat");
         other.addAll(collection);
+        System.out.println("Collection: " +other);
         System.out.printf("Comparing objects by reference: %s\n",collection == other); // Comparing objects by reference is [False]
         System.out.printf("Comparing objects by value: %s",collection.equals(other)); // Comparing objects by value is [True]
 

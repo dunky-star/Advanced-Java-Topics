@@ -33,7 +33,9 @@ public class QueueDemo {
 
         System.out.println("Priority Queue: " +pq);
         Integer topPeek = pq.peek(); // Get the head element without removing
-        Integer topPoll = pq.poll(); // Remove and return the head element
+        Integer topPoll = pq.poll(); // Remove and return the head element, if empty returns null
+        Integer topElement = pq.element(); // Get the head element without removing but this throws exception if empty
+        Integer removeFront = pq.remove(); // Remove and return the front element but this throws exception if empty
         System.out.println("Top queue element: " +topPeek);
         while (!pq.isEmpty()) {
             System.out.println(pq.poll());
